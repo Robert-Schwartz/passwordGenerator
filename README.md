@@ -28,5 +28,3 @@ GitHub Repository: https://github.com/Robert-Schwartz/passwordGenerator
 
 ## Languages USED
 This uses HTML, CSS, and JavaScript
-
-
