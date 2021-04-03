@@ -7,7 +7,7 @@ var specialChar= ['!','@','#','$','%','^','&','*','(',')','-','=','+','_']
 
 function generatePassword() {
   var passwordLength = prompt(
-    "Please choose a password length of at least 8 characters and no more than 128 characters"
+    "How many characters would you like your password to be? Please enter a number between 8 and 128."
   );
   passwordLength = parseInt(passwordLength);
   console.log(passwordLength);
@@ -17,23 +17,33 @@ function generatePassword() {
     );return ;
   }
  
-//pick random characters 
+//pick random characters out of the arrays 
 var userChoices = []
 
-  var confirmLowercase = confirm("Add Lowercase?")
+  var confirmLowercase = confirm("Add Lowercase Characters?")
     if (confirmLowercase) {userChoices = userChoices.concat(lowerCaseChar)};
-//repeat for next three characters 
+
+  var confirmUppercase = confirm("Add Uppercase Characters?")
+    if (confirmUppercase) {userChoices = userChoices.concat(upperCaseChar)};
+
+  var confirmNum = confirm("Add Number Characters?")
+    if (confirmNum) {userChoices = userChoices.concat(numChar)};
+
+  var confirmSpecial = confirm("Add Special Characters?")
+    if (confirmSpecial) {userChoices = userChoices.concat(specialChar)};
+
 
 //#5 add confirm that they did not say no to all of them
 //if all conditions false > return
 
 
-var charactersResult = ""
+var charactersResult = "";
 
 for (var i = 0; i <passwordLength; i ++) {
   var singleCharacter = userChoices[Math.floor(Math.random() * userChoices.length)];
   charactersResult += singleCharacter;
 }
+
 
 return charactersResult
 
