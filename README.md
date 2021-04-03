@@ -26,5 +26,5 @@ GitHub Repository: https://github.com/Robert-Schwartz/passwordGenerator
 
 3. View new randomly generated password
 
-## Languages USED
+## Languages Used
 This uses HTML, CSS, and JavaScript
