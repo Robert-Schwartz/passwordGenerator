@@ -50,6 +50,7 @@ for (var i = 0; i <passwordLength; i ++) {
   charactersResult += singleCharacter;
 }
 
+//return characterResult as value for generatePassword function
 return charactersResult
 
 }
