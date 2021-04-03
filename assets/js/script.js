@@ -7,14 +7,13 @@ var specialChar= ['!','@','#','$','%','^','&','*','(',')','-','=','+','_']
 
 function generatePassword() {
   var passwordLength = prompt(
-    "How many characters would you like your password to be? Please enter a number between 8 and 128."
+    "How many characters would you like your password to be?       Please enter a number between 8 and 128."
   );
   passwordLength = parseInt(passwordLength);
-  console.log(passwordLength);
   if (passwordLength < 8 || passwordLength > 128 || passwordLength === NaN) {
     alert(
       "That length does not meet the criteria. Please choose a password length of at least 8 characters and no more than 128 characters "
-    );return ;
+    ); return ;
   }
  
 //pick random characters out of the arrays 
@@ -33,6 +32,10 @@ var userChoices = []
     if (confirmSpecial) {userChoices = userChoices.concat(specialChar)};
 
 
+if (userChoices.length === 0) {
+  alert("please select at list one character type for password")
+  return 
+} 
 //#5 add confirm that they did not say no to all of them
 //if all conditions false > return
 
