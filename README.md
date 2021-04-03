@@ -8,9 +8,10 @@ This password generator allows user to generate a random password between 8 and 
 ![gfg](./assets/images/preview.png)
 
 ## Website
-URL:  
+URL:  https://robert-schwartz.github.io/passwordGenerator/
 
-GitHub Repository:
+
+GitHub Repository: https://github.com/Robert-Schwartz/passwordGenerator
 
 
 ## User Instructions
