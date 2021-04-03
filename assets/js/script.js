@@ -52,7 +52,6 @@ for (var i = 0; i <passwordLength; i ++) {
 
 //return characterResult as value for generatePassword function
 return charactersResult
-
 }
 
 // Get references to the #generate element
